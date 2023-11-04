@@ -13,6 +13,7 @@
           <tr>
             <td><%= task.title %></td>
             <td><%= task.body %></td>
+            <td><%= task.content %></td>
           </tr>
         </tbody>
       </table>
@@ -37,7 +38,7 @@
 
       <div class="form-group">
         <%= f.label :content %>
-        <%#= f.rich_text_area :content, class: "form-control" %>
+        <%= f.rich_text_area :content, class: "form-control" %>
       </div>
 
       <div class="form-group">
